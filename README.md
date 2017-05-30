@@ -5,4 +5,5 @@
   - [this my practice](https://www.youtube.com/watch?v=-2WiaSvOj78&list=WL&index=95)
   - [there I learn JS, practice in console](https://www.codecademy.com/learn/all) 
   - [then I read little pieces](https://learn.javascript.ru/js)
-  
+  http://github.com - automatic!
+[GitHub](http://github.com)
