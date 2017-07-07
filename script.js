@@ -3,24 +3,8 @@ var btn_next = document.querySelector('#gallery .buttons .next');
 
 var images = document.querySelectorAll('#gallery .photos img');
 var i = 0;
-var timer;
 
 var number = document.getElementById('out');
-
-autoSlider();
-
-function autoSlider() {
-    timer = setTimeout( function() {
-      images[i].className = '';
-      i++;
-      if (i >= images.length) {
-        i = 0;
-      }
-      images[i].className = 'showed';
-      number.innerHTML = i;
-      autoSlider();
-    }, 7000);
-}
 
 
 
