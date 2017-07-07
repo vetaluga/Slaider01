@@ -6,11 +6,9 @@ var i = 0;
 
 var number = document.getElementById('out');
 
-
-
 btn_prev.onclick = function () {
   images[i].className = '';
-  i--;
+  i = i - 3;
 
   if (i < 0) {
     i = images.length - 1;
@@ -21,7 +19,7 @@ btn_prev.onclick = function () {
 
 btn_next.onclick = function() {
   images[i].className = '';
-  i++;
+  i = i + 3;
   if (i >= images.length) {
     i = 0;
   }
