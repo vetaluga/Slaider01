@@ -10,7 +10,7 @@ btn_prev.onclick = function () {
   images[i].className = '';
   i = i - 3;
 
-  if (i < 0) {
+  if (i == -1) {
     i = images.length - 1;
   }
   images[i].className = 'showed';
@@ -20,8 +20,12 @@ btn_prev.onclick = function () {
 btn_next.onclick = function() {
   images[i].className = '';
   i = i + 3;
-  if (i >= images.length) {
+  if (i == 10) {
     i = 0;
+  } else if ( i == 11){
+    i = 1;
+  } else if ( i == 12) {
+    i = 2;
   }
   images[i].className = 'showed';
   number.innerHTML = i;
